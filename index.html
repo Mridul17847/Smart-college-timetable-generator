@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart College Timetable</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>🎓 Smart College Timetable Generator</h1>
+
+  <div class="input-box">
+
+    <input type="text" id="subject" placeholder="Subject Name">
+
+    <input type="text" id="faculty" placeholder="Faculty Name">
+
+    <input type="text" id="slot" placeholder="Slots (A11+A12)">
+
+    <button onclick="addSubject()">Add</button>
+
+<div class="clear-section">
+
+  <input type="text"
+         id="clearSubjectName"
+         placeholder="Enter Subject Name To Clear">
+
+  <button onclick="clearBySubject()"
+          class="clear-btn">
+
+      Remove Subject
+
+  </button>
+
+</div>
+
+  </div>
+
+  <table>
+
+    <thead>
+
+      <tr>
+
+        <th>DAY</th>
+
+        <th>08:30 - 10:00</th>
+
+        <th>10:05 - 11:35</th>
+
+        <th>11:40 - 01:10</th>
+
+        <th>Lunch</th>
+
+        <th>01:15 - 02:45</th>
+
+        <th>02:50 - 04:20</th>
+
+        <th>04:25 - 05:55</th>
+
+        <th>06:00 - 07:30</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td class="day">MON</td>
+
+        <td id="mon1"></td>
+        <td id="mon2"></td>
+        <td id="mon3"></td>
+
+        <td class="lunch">Lunch</td>
+
+        <td id="mon4"></td>
+        <td id="mon5"></td>
+        <td id="mon6"></td>
+        <td id="mon7"></td>
+      </tr>
+
+      <tr>
+        <td class="day">TUE</td>
+
+        <td id="tue1"></td>
+        <td id="tue2"></td>
+        <td id="tue3"></td>
+
+        <td class="lunch">Lunch</td>
+
+        <td id="tue4"></td>
+        <td id="tue5"></td>
+        <td id="tue6"></td>
+        <td id="tue7"></td>
+      </tr>
+
+      <tr>
+        <td class="day">WED</td>
+
+        <td id="wed1"></td>
+        <td id="wed2"></td>
+        <td id="wed3"></td>
+
+        <td class="lunch">Lunch</td>
+
+        <td id="wed4"></td>
+        <td id="wed5"></td>
+        <td id="wed6"></td>
+        <td id="wed7"></td>
+      </tr>
+
+      <tr>
+        <td class="day">THU</td>
+
+        <td id="thu1"></td>
+        <td id="thu2"></td>
+        <td id="thu3"></td>
+
+        <td class="lunch">Lunch</td>
+
+        <td id="thu4"></td>
+        <td id="thu5"></td>
+        <td id="thu6"></td>
+        <td id="thu7"></td>
+      </tr>
+
+      <tr>
+        <td class="day">FRI</td>
+
+        <td id="fri1"></td>
+        <td id="fri2"></td>
+        <td id="fri3"></td>
+
+        <td class="lunch">Lunch</td>
+
+        <td id="fri4"></td>
+        <td id="fri5"></td>
+        <td id="fri6"></td>
+        <td id="fri7"></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
